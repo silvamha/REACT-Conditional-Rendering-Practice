@@ -2,14 +2,14 @@ import React from "react";
 
 function Form(props) {
   return (
-    <form className="form">
-      <input type="text" placeholder="Username" />
-      <input type="password" placeholder="Password" />
+    <form id="form-el"  className="form">
+      <input id="username-el" type="text" placeholder="Username" />
+      <input id="password-el" type="password" placeholder="Password" />
       {!props.isRegistered && (
-        <input type="password" placeholder="Confirm Password" />
+        <input id="confirm-el" type="password" placeholder="Confirm Password" />
       )}
 
-      <button type="submit">{props.isRegistered ? "Login" : "Register"}</button>
+      <button id="btn-el" type="submit">{props.isRegistered ? "Login" : "Register"}</button>
     </form>
   );
 }
