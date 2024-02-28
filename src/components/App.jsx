@@ -3,7 +3,7 @@ import Form from "./Form";
 
 var userIsRegistered = true;
 
-function App() {
+const App = () => {
   return (
     <div className="container">
       <Form
